@@ -43,7 +43,10 @@ Untuk mendapatkan parameter waktu di Wireshark, terlebih dahulu menonton youtube
 ![export ke excel](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/5e4c6149-e2e1-4059-a814-057d2be4887e)
 
 10. Oke, selanjutnya kita akan menghitung Jitter, kita harus membuat Delay1, Delay2 dan Jitter Delay1 kita ambil dari nilai Delay waktu yang pertama dikurangi dengan Delay waktu kedua, Delay2 kita ambil dari nilai Delay waktu yang kedua, dan Jitter hasil dari Delay2 dikurang Delay1.
+    
+![8  Export Packet Dissections dan pilih As CSV](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/eb2c9c7d-39cb-423f-ae67-45dc07848610)
 
-11. Untuk mencari Total Jitter kita jumlahkan seluruh Jitter, dan untuk mencari Rata-rata Jitter dengan cara Total Delay dibagi dengan Paket Diterima.
+
+12. Untuk mencari Total Jitter kita jumlahkan seluruh Jitter, dan untuk mencari Rata-rata Jitter dengan cara Total Delay dibagi dengan Paket Diterima.
 
 ![Terakhir](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/f12292f7-a188-42d2-afc1-cce2c9c1bd2c)
