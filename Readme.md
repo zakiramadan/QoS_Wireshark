@@ -8,42 +8,42 @@ Untuk mendapatkan parameter waktu di Wireshark, terlebih dahulu menonton youtube
 
 1. Buka Wireshark dan pilih wifi lalu buka youtube dan tonton sampai waktu yang ditentukan.
 
-![App Screenshot](/Image/1.%20Buka%20Wireshark%20dan%20pilih%20wifi.png)
+![1  Buka Wireshark dan pilih wifi](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/89900b92-523c-4175-9533-48a8c3c1b00f)
 
 2. Buka Wireshark dan pilih wifi lalu buka youtube dan tonton sampai waktu yang ditentukan.
 
-![App Screenshot](/Image/2.%20Data%20parameter.png)
+![2  Data parameter](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/443017ba-92ff-4d79-820f-fca9b3f0fa26)
 
 3. Lalu kita akan mengukur Throughput, untuk melihat time span dan bytes kita harus pergi ke statistics lalu Capture File Properties.
 
-![App Screenshot](/Image/3.%20Pilih%20Capture%20File%20Properties.jpg)
+![3  Pilih Capture File Properties](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/9281bb69-5a4c-4143-84c0-469d7aa82f19)
 
 4. Lalu, catat time span dan bytes, dan cari maka nanti hasilnya akan sama dengan Avarage bits/s.
 
-![App Screenshot](/Image/4.%20time%20span%20dan%20bytes.png)
+![4  time span dan bytes](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/19e3e068-c989-4438-8eb9-b425f68bf45e)
 
 5. Kita cari dengan rumus seperti dibawah ini.
 
-![App Screenshot](/Image/5.%20Rumus%20Throughput.png)
+![5  Rumus Throughput](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/907a3b7e-60c8-4b76-8d24-e90898089faf)
 
 6. Sekarang kita akan melihat 'Packet Loss' dengan cara ketik pada wireshark `tcp.analysis.lost_segment' maka data packet loss akan keluar kemudian kalian hitung untuk menghitung rata-rata dari packet loss.
 
-![App Screenshot](/Image/6.%20tcp.analysis.lost_segment.png)
+![6  tcp analysis lost_segment](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/81ddab85-e942-4130-ba63-36777391adc2)
 
 7. Untuk melihat keseluruhan packet kalian pergi ke statistic dan lihat jumlah packet disana.
 
-![App Screenshot](/Image/packets.png)
+![packets](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/2d150e83-6180-4dc4-acb2-e5462252831b)
 
 8. lalu hitung packet loss dengan rumus seperti dibawah ini
 
-![App Screenshot](/Image/packtess%20loss.png)
+![packtess loss](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/5b7033fc-460d-470c-b238-0e5561cc5d49)
 
 9. kita akan menghitung Delay, dengan cara kita ketik di wireshark tcp maka data-data akan terfilter. Lalu pilih File pilih Export Packet Dissections dan pilih As CSV agar mempermudah menghitung delay.
 
-![App Screenshot](/Image/export%20ke%20excel.jpg)
+![export ke excel](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/5e4c6149-e2e1-4059-a814-057d2be4887e)
 
 10. Oke, selanjutnya kita akan menghitung Jitter, kita harus membuat Delay1, Delay2 dan Jitter Delay1 kita ambil dari nilai Delay waktu yang pertama dikurangi dengan Delay waktu kedua, Delay2 kita ambil dari nilai Delay waktu yang kedua, dan Jitter hasil dari Delay2 dikurang Delay1.
 
 11. Untuk mencari Total Jitter kita jumlahkan seluruh Jitter, dan untuk mencari Rata-rata Jitter dengan cara Total Delay dibagi dengan Paket Diterima.
 
-![App Screenshot](/Image/Terakhir.png)
+![Terakhir](https://github.com/zakiramadan/QoS_Wireshark/assets/126186033/f12292f7-a188-42d2-afc1-cce2c9c1bd2c)
